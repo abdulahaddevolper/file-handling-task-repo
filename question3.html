@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Student Registration Form</title>
+    <style>
+       form {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px; /* Rounded corners */
+            background-color: #f9f9f9;
+        }
+        input[type="text"],
+        input[type="email"],
+        select 
+        {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        input:required {
+            border: 2px solid red; /* Red border for required fields */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            
+        }
+      
+       
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Student Information</legend>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="studentid">Student ID:</label>
+        <input type="text" id="studentid" name="studentid" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Department</legend>
+        
+        <label for="department">Select Department:</label>
+        <select id="department" name="department" required>
+            <option value="cs">Computer Science</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="me">Mechanical Engineering</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Gender</legend>
+        
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Programming Languages Known</legend>
+
+        <input type="checkbox" id="html" name="language" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="language" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="javascript" name="language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </fieldset>
+
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>
